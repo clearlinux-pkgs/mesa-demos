@@ -3,6 +3,3 @@
 gbm
 osmesa
 vg
-wayland-client
-wayland-egl
-glew

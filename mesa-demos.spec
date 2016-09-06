@@ -4,7 +4,7 @@
 #
 Name     : mesa-demos
 Version  : 8.3.0
-Release  : 3
+Release  : 4
 URL      : ftp://ftp.freedesktop.org/pub/mesa/demos/8.3.0/mesa-demos-8.3.0.tar.gz
 Source0  : ftp://ftp.freedesktop.org/pub/mesa/demos/8.3.0/mesa-demos-8.3.0.tar.gz
 Summary  : No detailed summary available
@@ -19,8 +19,11 @@ BuildRequires : pkgconfig(freetype2)
 BuildRequires : pkgconfig(gl)
 BuildRequires : pkgconfig(glesv1_cm)
 BuildRequires : pkgconfig(glesv2)
+BuildRequires : pkgconfig(glew)
 BuildRequires : pkgconfig(glu)
 BuildRequires : pkgconfig(libdrm)
+BuildRequires : pkgconfig(wayland-client)
+BuildRequires : pkgconfig(wayland-egl)
 BuildRequires : pkgconfig(x11)
 BuildRequires : pkgconfig(xext)
 
@@ -46,14 +49,15 @@ data components for the mesa-demos package.
 
 
 %prep
-cd ..
 %setup -q -n mesa-demos-8.3.0
 
 %build
+export LANG=C
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
 %check
+export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost
