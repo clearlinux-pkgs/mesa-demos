@@ -4,7 +4,7 @@
 #
 Name     : mesa-demos
 Version  : 8.3.0
-Release  : 4
+Release  : 5
 URL      : ftp://ftp.freedesktop.org/pub/mesa/demos/8.3.0/mesa-demos-8.3.0.tar.gz
 Source0  : ftp://ftp.freedesktop.org/pub/mesa/demos/8.3.0/mesa-demos-8.3.0.tar.gz
 Summary  : No detailed summary available
