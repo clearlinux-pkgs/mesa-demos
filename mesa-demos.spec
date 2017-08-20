@@ -6,7 +6,7 @@
 #
 Name     : mesa-demos
 Version  : 8.3.0
-Release  : 8
+Release  : 9
 URL      : ftp://ftp.freedesktop.org/pub/mesa/demos/8.3.0/mesa-demos-8.3.0.tar.gz
 Source0  : ftp://ftp.freedesktop.org/pub/mesa/demos/8.3.0/mesa-demos-8.3.0.tar.gz
 Source99 : ftp://ftp.freedesktop.org/pub/mesa/demos/8.3.0/mesa-demos-8.3.0.tar.gz.sig
@@ -59,7 +59,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1503121283
+export SOURCE_DATE_EPOCH=1503188789
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
@@ -71,7 +71,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1503121283
+export SOURCE_DATE_EPOCH=1503188789
 rm -rf %{buildroot}
 %make_install
 
@@ -80,332 +80,332 @@ rm -rf %{buildroot}
 
 %files bin
 %defattr(-,root,root,-)
-/usr/bin/arbfplight
-/usr/bin/arbfslight
-/usr/bin/arbocclude
-/usr/bin/arbocclude2
-/usr/bin/array
-/usr/bin/bezier
-/usr/bin/bitmap
-/usr/bin/blinking-teapot
-/usr/bin/bounce
-/usr/bin/brick
-/usr/bin/bump
-/usr/bin/clear-color
-/usr/bin/clear-fbo
-/usr/bin/clear-fbo-scissor
-/usr/bin/clear-fbo-tex
-/usr/bin/clear-random
-/usr/bin/clear-repeat
-/usr/bin/clear-scissor
-/usr/bin/clear-undefined
-/usr/bin/clearspd
-/usr/bin/convolutions
-/usr/bin/copypix
-/usr/bin/copytex
-/usr/bin/createwin
-/usr/bin/cubemap
-/usr/bin/cuberender
-/usr/bin/deriv
-/usr/bin/dinoshade
-/usr/bin/dissolve
-/usr/bin/dlist-begin-call-end
-/usr/bin/dlist-dangling
-/usr/bin/dlist-degenerate
-/usr/bin/dlist-edgeflag
-/usr/bin/dlist-edgeflag-dangling
-/usr/bin/dlist-flat-tri
-/usr/bin/dlist-mat-tri
-/usr/bin/dlist-recursive-call
-/usr/bin/dlist-tri-flat-tri
-/usr/bin/dlist-tri-mat-tri
-/usr/bin/draw2arrays
-/usr/bin/drawarrays
-/usr/bin/drawelements
-/usr/bin/drawelements-large
-/usr/bin/drawoverhead
-/usr/bin/drawpix
-/usr/bin/drawrange
-/usr/bin/engine
-/usr/bin/es2_info
-/usr/bin/es2gears_x11
-/usr/bin/es2tri
-/usr/bin/fbo_firecube
-/usr/bin/fbobind
-/usr/bin/fbotexture
-/usr/bin/fill
-/usr/bin/fire
-/usr/bin/flat-clip
-/usr/bin/fogcoord
-/usr/bin/fplight
-/usr/bin/fragcoord
-/usr/bin/fs-tri
-/usr/bin/fslight
-/usr/bin/fsraytrace
-/usr/bin/gamma
-/usr/bin/gearbox
-/usr/bin/gears
-/usr/bin/geartrain
-/usr/bin/genmipmap
-/usr/bin/geom-outlining-130
-/usr/bin/geom-outlining-150
-/usr/bin/geom-sprites
-/usr/bin/geom-stipple-lines
-/usr/bin/geom-wide-lines
+%exclude /usr/bin/arbfplight
+%exclude /usr/bin/arbfslight
+%exclude /usr/bin/arbocclude
+%exclude /usr/bin/arbocclude2
+%exclude /usr/bin/array
+%exclude /usr/bin/bezier
+%exclude /usr/bin/bitmap
+%exclude /usr/bin/blinking-teapot
+%exclude /usr/bin/bounce
+%exclude /usr/bin/brick
+%exclude /usr/bin/bump
+%exclude /usr/bin/clear-color
+%exclude /usr/bin/clear-fbo
+%exclude /usr/bin/clear-fbo-scissor
+%exclude /usr/bin/clear-fbo-tex
+%exclude /usr/bin/clear-random
+%exclude /usr/bin/clear-repeat
+%exclude /usr/bin/clear-scissor
+%exclude /usr/bin/clear-undefined
+%exclude /usr/bin/clearspd
+%exclude /usr/bin/convolutions
+%exclude /usr/bin/copypix
+%exclude /usr/bin/copytex
+%exclude /usr/bin/createwin
+%exclude /usr/bin/cubemap
+%exclude /usr/bin/cuberender
+%exclude /usr/bin/deriv
+%exclude /usr/bin/dinoshade
+%exclude /usr/bin/dissolve
+%exclude /usr/bin/dlist-begin-call-end
+%exclude /usr/bin/dlist-dangling
+%exclude /usr/bin/dlist-degenerate
+%exclude /usr/bin/dlist-edgeflag
+%exclude /usr/bin/dlist-edgeflag-dangling
+%exclude /usr/bin/dlist-flat-tri
+%exclude /usr/bin/dlist-mat-tri
+%exclude /usr/bin/dlist-recursive-call
+%exclude /usr/bin/dlist-tri-flat-tri
+%exclude /usr/bin/dlist-tri-mat-tri
+%exclude /usr/bin/draw2arrays
+%exclude /usr/bin/drawarrays
+%exclude /usr/bin/drawelements
+%exclude /usr/bin/drawelements-large
+%exclude /usr/bin/drawoverhead
+%exclude /usr/bin/drawpix
+%exclude /usr/bin/drawrange
+%exclude /usr/bin/engine
+%exclude /usr/bin/es2_info
+%exclude /usr/bin/es2gears_x11
+%exclude /usr/bin/es2tri
+%exclude /usr/bin/fbo_firecube
+%exclude /usr/bin/fbobind
+%exclude /usr/bin/fbotexture
+%exclude /usr/bin/fill
+%exclude /usr/bin/fire
+%exclude /usr/bin/flat-clip
+%exclude /usr/bin/fogcoord
+%exclude /usr/bin/fplight
+%exclude /usr/bin/fragcoord
+%exclude /usr/bin/fs-tri
+%exclude /usr/bin/fslight
+%exclude /usr/bin/fsraytrace
+%exclude /usr/bin/gamma
+%exclude /usr/bin/gearbox
+%exclude /usr/bin/gears
+%exclude /usr/bin/geartrain
+%exclude /usr/bin/genmipmap
+%exclude /usr/bin/geom-outlining-130
+%exclude /usr/bin/geom-outlining-150
+%exclude /usr/bin/geom-sprites
+%exclude /usr/bin/geom-stipple-lines
+%exclude /usr/bin/geom-wide-lines
+%exclude /usr/bin/gloss
+%exclude /usr/bin/glslstateschange
+%exclude /usr/bin/gltestperf
+%exclude /usr/bin/glthreads
+%exclude /usr/bin/glxcontexts
+%exclude /usr/bin/glxdemo
+%exclude /usr/bin/glxgears_fbconfig
+%exclude /usr/bin/glxgears_pixmap
+%exclude /usr/bin/glxheads
+%exclude /usr/bin/glxpbdemo
+%exclude /usr/bin/glxpixmap
+%exclude /usr/bin/glxsnoop
+%exclude /usr/bin/glxswapcontrol
+%exclude /usr/bin/gs-tri
+%exclude /usr/bin/gsraytrace
+%exclude /usr/bin/identity
+%exclude /usr/bin/ipers
+%exclude /usr/bin/isosurf
+%exclude /usr/bin/line
+%exclude /usr/bin/line-clip
+%exclude /usr/bin/line-cull
+%exclude /usr/bin/line-flat
+%exclude /usr/bin/line-smooth
+%exclude /usr/bin/line-stipple-wide
+%exclude /usr/bin/line-userclip
+%exclude /usr/bin/line-userclip-clip
+%exclude /usr/bin/line-userclip-nop
+%exclude /usr/bin/line-userclip-nop-clip
+%exclude /usr/bin/line-wide
+%exclude /usr/bin/line-xor
+%exclude /usr/bin/lineloop
+%exclude /usr/bin/lineloop-clip
+%exclude /usr/bin/lineloop-elts
+%exclude /usr/bin/linestrip
+%exclude /usr/bin/linestrip-clip
+%exclude /usr/bin/linestrip-flat-stipple
+%exclude /usr/bin/linestrip-stipple
+%exclude /usr/bin/linestrip-stipple-wide
+%exclude /usr/bin/linktest
+%exclude /usr/bin/lodbias
+%exclude /usr/bin/long-fixed-func
+%exclude /usr/bin/mandelbrot
+%exclude /usr/bin/manywin
+%exclude /usr/bin/morph3d
+%exclude /usr/bin/multiarb
+%exclude /usr/bin/multictx
+%exclude /usr/bin/multinoise
+%exclude /usr/bin/multitex
+%exclude /usr/bin/noise
+%exclude /usr/bin/noise2
+%exclude /usr/bin/offset
+%exclude /usr/bin/osdemo
+%exclude /usr/bin/osdemo16
+%exclude /usr/bin/osdemo32
+%exclude /usr/bin/overlay
+%exclude /usr/bin/paltex
+%exclude /usr/bin/pbdemo
+%exclude /usr/bin/pbinfo
+%exclude /usr/bin/pgon-mode
+%exclude /usr/bin/pixeltest
+%exclude /usr/bin/point
+%exclude /usr/bin/point-clip
+%exclude /usr/bin/point-param
+%exclude /usr/bin/point-sprite
+%exclude /usr/bin/point-wide
+%exclude /usr/bin/point-wide-smooth
+%exclude /usr/bin/pointblast
+%exclude /usr/bin/pointcoord
+%exclude /usr/bin/points
+%exclude /usr/bin/poly
+%exclude /usr/bin/poly-flat
+%exclude /usr/bin/poly-flat-clip
+%exclude /usr/bin/poly-flat-unfilled-clip
+%exclude /usr/bin/poly-unfilled
+%exclude /usr/bin/projtex
+%exclude /usr/bin/quad
+%exclude /usr/bin/quad-clip
+%exclude /usr/bin/quad-clip-all-vertices
+%exclude /usr/bin/quad-clip-nearplane
+%exclude /usr/bin/quad-degenerate
+%exclude /usr/bin/quad-flat
+%exclude /usr/bin/quad-offset-factor
+%exclude /usr/bin/quad-offset-unfilled
+%exclude /usr/bin/quad-offset-units
+%exclude /usr/bin/quad-tex-2d
+%exclude /usr/bin/quad-tex-3d
+%exclude /usr/bin/quad-tex-alpha
+%exclude /usr/bin/quad-tex-pbo
+%exclude /usr/bin/quad-tex-sub
+%exclude /usr/bin/quad-unfilled
+%exclude /usr/bin/quad-unfilled-clip
+%exclude /usr/bin/quad-unfilled-stipple
+%exclude /usr/bin/quads
+%exclude /usr/bin/quadstrip
+%exclude /usr/bin/quadstrip-clip
+%exclude /usr/bin/quadstrip-cont
+%exclude /usr/bin/quadstrip-flat
+%exclude /usr/bin/ray
+%exclude /usr/bin/readpix
+%exclude /usr/bin/readpixels
+%exclude /usr/bin/reflect
+%exclude /usr/bin/renormal
+%exclude /usr/bin/samplers
+%exclude /usr/bin/samplers_array
+%exclude /usr/bin/shadow_sampler
+%exclude /usr/bin/shadowtex
+%exclude /usr/bin/shape
+%exclude /usr/bin/sharedtex
+%exclude /usr/bin/sharedtex_mt
+%exclude /usr/bin/shtest
+%exclude /usr/bin/simplex-noise
+%exclude /usr/bin/singlebuffer
+%exclude /usr/bin/skinning
+%exclude /usr/bin/spectex
+%exclude /usr/bin/spriteblast
+%exclude /usr/bin/stex3d
+%exclude /usr/bin/sub-tex
+%exclude /usr/bin/swapbuffers
+%exclude /usr/bin/teapot
+%exclude /usr/bin/terrain
+%exclude /usr/bin/tessdemo
+%exclude /usr/bin/tex-quads
+%exclude /usr/bin/texaaline
+%exclude /usr/bin/texcyl
+%exclude /usr/bin/texdemo1
+%exclude /usr/bin/texenv
+%exclude /usr/bin/teximage
+%exclude /usr/bin/texture_from_pixmap
+%exclude /usr/bin/textures
+%exclude /usr/bin/toyball
+%exclude /usr/bin/tri
+%exclude /usr/bin/tri-2101010
+%exclude /usr/bin/tri-2101010-dlist
+%exclude /usr/bin/tri-alpha
+%exclude /usr/bin/tri-alpha-tex
+%exclude /usr/bin/tri-array-interleaved
+%exclude /usr/bin/tri-blend
+%exclude /usr/bin/tri-blend-color
+%exclude /usr/bin/tri-blend-max
+%exclude /usr/bin/tri-blend-min
+%exclude /usr/bin/tri-blend-revsub
+%exclude /usr/bin/tri-blend-sub
+%exclude /usr/bin/tri-clear
+%exclude /usr/bin/tri-clip
+%exclude /usr/bin/tri-cull
+%exclude /usr/bin/tri-cull-both
+%exclude /usr/bin/tri-dlist
+%exclude /usr/bin/tri-edgeflag
+%exclude /usr/bin/tri-edgeflag-array
+%exclude /usr/bin/tri-edgeflag-pv
+%exclude /usr/bin/tri-fbo
+%exclude /usr/bin/tri-fbo-tex
+%exclude /usr/bin/tri-fbo-tex-mip
+%exclude /usr/bin/tri-flat
+%exclude /usr/bin/tri-flat-clip
+%exclude /usr/bin/tri-fog
+%exclude /usr/bin/tri-fp
+%exclude /usr/bin/tri-fp-const-imm
+%exclude /usr/bin/tri-lit
+%exclude /usr/bin/tri-lit-material
+%exclude /usr/bin/tri-logicop-none
+%exclude /usr/bin/tri-logicop-xor
+%exclude /usr/bin/tri-mask-tri
+%exclude /usr/bin/tri-multitex-vbo
+%exclude /usr/bin/tri-orig
+%exclude /usr/bin/tri-point-line-clipped
+%exclude /usr/bin/tri-query
+%exclude /usr/bin/tri-repeat
+%exclude /usr/bin/tri-rotate
+%exclude /usr/bin/tri-scissor-tri
+%exclude /usr/bin/tri-square
+%exclude /usr/bin/tri-stencil
+%exclude /usr/bin/tri-stipple
+%exclude /usr/bin/tri-tex
+%exclude /usr/bin/tri-tex-1d
+%exclude /usr/bin/tri-tex-3d
+%exclude /usr/bin/tri-tex-stipple
+%exclude /usr/bin/tri-tri
+%exclude /usr/bin/tri-unfilled
+%exclude /usr/bin/tri-unfilled-clip
+%exclude /usr/bin/tri-unfilled-edgeflag
+%exclude /usr/bin/tri-unfilled-fog
+%exclude /usr/bin/tri-unfilled-point
+%exclude /usr/bin/tri-unfilled-smooth
+%exclude /usr/bin/tri-unfilled-tri
+%exclude /usr/bin/tri-unfilled-tri-lit
+%exclude /usr/bin/tri-unfilled-userclip
+%exclude /usr/bin/tri-unfilled-userclip-stip
+%exclude /usr/bin/tri-userclip
+%exclude /usr/bin/tri-viewport
+%exclude /usr/bin/tri-z
+%exclude /usr/bin/tri-z-9
+%exclude /usr/bin/tri-z-clip
+%exclude /usr/bin/tri-z-eq
+%exclude /usr/bin/trifan
+%exclude /usr/bin/trifan-flat
+%exclude /usr/bin/trifan-flat-clip
+%exclude /usr/bin/trifan-flat-unfilled-clip
+%exclude /usr/bin/trifan-unfilled
+%exclude /usr/bin/trirast
+%exclude /usr/bin/trispd
+%exclude /usr/bin/tristrip
+%exclude /usr/bin/tristrip-clip
+%exclude /usr/bin/tristrip-flat
+%exclude /usr/bin/tunnel
+%exclude /usr/bin/tunnel2
+%exclude /usr/bin/twoside
+%exclude /usr/bin/vao_demo
+%exclude /usr/bin/vbo
+%exclude /usr/bin/vbo-drawarrays
+%exclude /usr/bin/vbo-drawarrays-2101010
+%exclude /usr/bin/vbo-drawelements
+%exclude /usr/bin/vbo-drawrange
+%exclude /usr/bin/vbo-noninterleaved
+%exclude /usr/bin/vbo-tri
+%exclude /usr/bin/vert-or-frag-only
+%exclude /usr/bin/vert-tex
+%exclude /usr/bin/vertexrate
+%exclude /usr/bin/vp-array
+%exclude /usr/bin/vp-array-hf
+%exclude /usr/bin/vp-array-int
+%exclude /usr/bin/vp-clip
+%exclude /usr/bin/vp-line-clip
+%exclude /usr/bin/vp-tri
+%exclude /usr/bin/vp-tri-cb
+%exclude /usr/bin/vp-tri-cb-pos
+%exclude /usr/bin/vp-tri-cb-tex
+%exclude /usr/bin/vp-tri-imm
+%exclude /usr/bin/vp-tri-invariant
+%exclude /usr/bin/vp-tri-swap
+%exclude /usr/bin/vp-tri-tex
+%exclude /usr/bin/vp-unfilled
+%exclude /usr/bin/vsraytrace
+%exclude /usr/bin/wincopy
+%exclude /usr/bin/winpos
+%exclude /usr/bin/xfont
+%exclude /usr/bin/xrotfontdemo
 /usr/bin/glinfo
-/usr/bin/gloss
-/usr/bin/glslstateschange
 /usr/bin/glsync
-/usr/bin/gltestperf
-/usr/bin/glthreads
-/usr/bin/glxcontexts
-/usr/bin/glxdemo
 /usr/bin/glxgears
-/usr/bin/glxgears_fbconfig
-/usr/bin/glxgears_pixmap
-/usr/bin/glxheads
 /usr/bin/glxinfo
-/usr/bin/glxpbdemo
-/usr/bin/glxpixmap
-/usr/bin/glxsnoop
-/usr/bin/glxswapcontrol
-/usr/bin/gs-tri
-/usr/bin/gsraytrace
-/usr/bin/identity
-/usr/bin/ipers
-/usr/bin/isosurf
-/usr/bin/line
-/usr/bin/line-clip
-/usr/bin/line-cull
-/usr/bin/line-flat
-/usr/bin/line-smooth
-/usr/bin/line-stipple-wide
-/usr/bin/line-userclip
-/usr/bin/line-userclip-clip
-/usr/bin/line-userclip-nop
-/usr/bin/line-userclip-nop-clip
-/usr/bin/line-wide
-/usr/bin/line-xor
-/usr/bin/lineloop
-/usr/bin/lineloop-clip
-/usr/bin/lineloop-elts
-/usr/bin/linestrip
-/usr/bin/linestrip-clip
-/usr/bin/linestrip-flat-stipple
-/usr/bin/linestrip-stipple
-/usr/bin/linestrip-stipple-wide
-/usr/bin/linktest
-/usr/bin/lodbias
-/usr/bin/long-fixed-func
-/usr/bin/mandelbrot
-/usr/bin/manywin
-/usr/bin/morph3d
-/usr/bin/multiarb
-/usr/bin/multictx
-/usr/bin/multinoise
-/usr/bin/multitex
-/usr/bin/noise
-/usr/bin/noise2
-/usr/bin/offset
-/usr/bin/osdemo
-/usr/bin/osdemo16
-/usr/bin/osdemo32
-/usr/bin/overlay
-/usr/bin/paltex
-/usr/bin/pbdemo
-/usr/bin/pbinfo
-/usr/bin/pgon-mode
-/usr/bin/pixeltest
-/usr/bin/point
-/usr/bin/point-clip
-/usr/bin/point-param
-/usr/bin/point-sprite
-/usr/bin/point-wide
-/usr/bin/point-wide-smooth
-/usr/bin/pointblast
-/usr/bin/pointcoord
-/usr/bin/points
-/usr/bin/poly
-/usr/bin/poly-flat
-/usr/bin/poly-flat-clip
-/usr/bin/poly-flat-unfilled-clip
-/usr/bin/poly-unfilled
-/usr/bin/projtex
-/usr/bin/quad
-/usr/bin/quad-clip
-/usr/bin/quad-clip-all-vertices
-/usr/bin/quad-clip-nearplane
-/usr/bin/quad-degenerate
-/usr/bin/quad-flat
-/usr/bin/quad-offset-factor
-/usr/bin/quad-offset-unfilled
-/usr/bin/quad-offset-units
-/usr/bin/quad-tex-2d
-/usr/bin/quad-tex-3d
-/usr/bin/quad-tex-alpha
-/usr/bin/quad-tex-pbo
-/usr/bin/quad-tex-sub
-/usr/bin/quad-unfilled
-/usr/bin/quad-unfilled-clip
-/usr/bin/quad-unfilled-stipple
-/usr/bin/quads
-/usr/bin/quadstrip
-/usr/bin/quadstrip-clip
-/usr/bin/quadstrip-cont
-/usr/bin/quadstrip-flat
-/usr/bin/ray
-/usr/bin/readpix
-/usr/bin/readpixels
-/usr/bin/reflect
-/usr/bin/renormal
-/usr/bin/samplers
-/usr/bin/samplers_array
-/usr/bin/shadow_sampler
-/usr/bin/shadowtex
-/usr/bin/shape
-/usr/bin/sharedtex
-/usr/bin/sharedtex_mt
-/usr/bin/shtest
-/usr/bin/simplex-noise
-/usr/bin/singlebuffer
-/usr/bin/skinning
-/usr/bin/spectex
-/usr/bin/spriteblast
-/usr/bin/stex3d
-/usr/bin/sub-tex
-/usr/bin/swapbuffers
-/usr/bin/teapot
-/usr/bin/terrain
-/usr/bin/tessdemo
-/usr/bin/tex-quads
-/usr/bin/texaaline
-/usr/bin/texcyl
-/usr/bin/texdemo1
-/usr/bin/texenv
-/usr/bin/teximage
-/usr/bin/texture_from_pixmap
-/usr/bin/textures
-/usr/bin/toyball
-/usr/bin/tri
-/usr/bin/tri-2101010
-/usr/bin/tri-2101010-dlist
-/usr/bin/tri-alpha
-/usr/bin/tri-alpha-tex
-/usr/bin/tri-array-interleaved
-/usr/bin/tri-blend
-/usr/bin/tri-blend-color
-/usr/bin/tri-blend-max
-/usr/bin/tri-blend-min
-/usr/bin/tri-blend-revsub
-/usr/bin/tri-blend-sub
-/usr/bin/tri-clear
-/usr/bin/tri-clip
-/usr/bin/tri-cull
-/usr/bin/tri-cull-both
-/usr/bin/tri-dlist
-/usr/bin/tri-edgeflag
-/usr/bin/tri-edgeflag-array
-/usr/bin/tri-edgeflag-pv
-/usr/bin/tri-fbo
-/usr/bin/tri-fbo-tex
-/usr/bin/tri-fbo-tex-mip
-/usr/bin/tri-flat
-/usr/bin/tri-flat-clip
-/usr/bin/tri-fog
-/usr/bin/tri-fp
-/usr/bin/tri-fp-const-imm
-/usr/bin/tri-lit
-/usr/bin/tri-lit-material
-/usr/bin/tri-logicop-none
-/usr/bin/tri-logicop-xor
-/usr/bin/tri-mask-tri
-/usr/bin/tri-multitex-vbo
-/usr/bin/tri-orig
-/usr/bin/tri-point-line-clipped
-/usr/bin/tri-query
-/usr/bin/tri-repeat
-/usr/bin/tri-rotate
-/usr/bin/tri-scissor-tri
-/usr/bin/tri-square
-/usr/bin/tri-stencil
-/usr/bin/tri-stipple
-/usr/bin/tri-tex
-/usr/bin/tri-tex-1d
-/usr/bin/tri-tex-3d
-/usr/bin/tri-tex-stipple
-/usr/bin/tri-tri
-/usr/bin/tri-unfilled
-/usr/bin/tri-unfilled-clip
-/usr/bin/tri-unfilled-edgeflag
-/usr/bin/tri-unfilled-fog
-/usr/bin/tri-unfilled-point
-/usr/bin/tri-unfilled-smooth
-/usr/bin/tri-unfilled-tri
-/usr/bin/tri-unfilled-tri-lit
-/usr/bin/tri-unfilled-userclip
-/usr/bin/tri-unfilled-userclip-stip
-/usr/bin/tri-userclip
-/usr/bin/tri-viewport
-/usr/bin/tri-z
-/usr/bin/tri-z-9
-/usr/bin/tri-z-clip
-/usr/bin/tri-z-eq
-/usr/bin/trifan
-/usr/bin/trifan-flat
-/usr/bin/trifan-flat-clip
-/usr/bin/trifan-flat-unfilled-clip
-/usr/bin/trifan-unfilled
-/usr/bin/trirast
-/usr/bin/trispd
-/usr/bin/tristrip
-/usr/bin/tristrip-clip
-/usr/bin/tristrip-flat
-/usr/bin/tunnel
-/usr/bin/tunnel2
-/usr/bin/twoside
-/usr/bin/vao_demo
-/usr/bin/vbo
-/usr/bin/vbo-drawarrays
-/usr/bin/vbo-drawarrays-2101010
-/usr/bin/vbo-drawelements
-/usr/bin/vbo-drawrange
-/usr/bin/vbo-noninterleaved
-/usr/bin/vbo-tri
-/usr/bin/vert-or-frag-only
-/usr/bin/vert-tex
-/usr/bin/vertexrate
-/usr/bin/vp-array
-/usr/bin/vp-array-hf
-/usr/bin/vp-array-int
-/usr/bin/vp-clip
-/usr/bin/vp-line-clip
-/usr/bin/vp-tri
-/usr/bin/vp-tri-cb
-/usr/bin/vp-tri-cb-pos
-/usr/bin/vp-tri-cb-tex
-/usr/bin/vp-tri-imm
-/usr/bin/vp-tri-invariant
-/usr/bin/vp-tri-swap
-/usr/bin/vp-tri-tex
-/usr/bin/vp-unfilled
-/usr/bin/vsraytrace
-/usr/bin/wincopy
-/usr/bin/winpos
-/usr/bin/xfont
-/usr/bin/xrotfontdemo
 
 %files data
 %defattr(-,root,root,-)
-/usr/share/mesa-demos/arch.rgb
-/usr/share/mesa-demos/bw.rgb
-/usr/share/mesa-demos/geartrain.dat
-/usr/share/mesa-demos/girl.rgb
-/usr/share/mesa-demos/girl2.rgb
-/usr/share/mesa-demos/isosurf.dat
-/usr/share/mesa-demos/reflect.rgb
-/usr/share/mesa-demos/s128.rgb
-/usr/share/mesa-demos/terrain.dat
-/usr/share/mesa-demos/tile.rgb
-/usr/share/mesa-demos/tree2.rgba
-/usr/share/mesa-demos/tree3.rgb
-/usr/share/mesa-demos/wrs_logo.rgb
+%exclude /usr/share/mesa-demos/arch.rgb
+%exclude /usr/share/mesa-demos/bw.rgb
+%exclude /usr/share/mesa-demos/geartrain.dat
+%exclude /usr/share/mesa-demos/girl.rgb
+%exclude /usr/share/mesa-demos/girl2.rgb
+%exclude /usr/share/mesa-demos/isosurf.dat
+%exclude /usr/share/mesa-demos/reflect.rgb
+%exclude /usr/share/mesa-demos/s128.rgb
+%exclude /usr/share/mesa-demos/terrain.dat
+%exclude /usr/share/mesa-demos/tile.rgb
+%exclude /usr/share/mesa-demos/tree2.rgba
+%exclude /usr/share/mesa-demos/tree3.rgb
+%exclude /usr/share/mesa-demos/wrs_logo.rgb
