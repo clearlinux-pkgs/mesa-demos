@@ -76,6 +76,7 @@
 /usr/bin/glthreads
 /usr/bin/glxcontexts
 /usr/bin/glxdemo
+/usr/bin/glxgears
 /usr/bin/glxgears_fbconfig
 /usr/bin/glxgears_pixmap
 /usr/bin/glxheads
