@@ -6,7 +6,7 @@
 #
 Name     : mesa-demos
 Version  : 8.4.0
-Release  : 14
+Release  : 15
 URL      : https://mesa.freedesktop.org/archive/demos/mesa-demos-8.4.0.tar.bz2
 Source0  : https://mesa.freedesktop.org/archive/demos/mesa-demos-8.4.0.tar.bz2
 Source1 : https://mesa.freedesktop.org/archive/demos/mesa-demos-8.4.0.tar.bz2.sig
