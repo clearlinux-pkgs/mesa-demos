@@ -1,2 +1,10 @@
 # This file contains additional pkgconfig build requirements that did
 # not get picked up automatically. One name per line, no whitespace.
+libdecor-0
+libdrm
+osmesa
+vulkan
+wayland-client
+wayland-protocols
+x11
+xkbcommon
