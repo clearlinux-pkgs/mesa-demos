@@ -3,3 +3,5 @@
 glew-dev
 glslang
 freeglut-dev
+wayland
+wayland-dev
